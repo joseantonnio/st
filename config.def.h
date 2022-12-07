@@ -4,8 +4,11 @@
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+ * borderperc: percentage of cell width to use as a border
+ *		0 = no border, 100 = border width is same as cell width
  */
 static char *font = "Liberation Mono:pixelsize=15:antialias=true:autohint=true";
+
 /*
  * Spare fonts - Suggestions:
  *
@@ -16,7 +19,7 @@ static char *font2[] = {
 	"Hack Nerd Font Mono:pixelsize=15:antialias=true:autohint=true"
 };
 
-static int borderpx = 2;
+static int borderperc = 100;
 
 /*
  * What program is execed by st depends of these precedence rules:
